@@ -1,0 +1,6 @@
+[submodule "eva-fullstack-challenge-backend"]
+	path = eva-fullstack-challenge-backend
+	url = https://github.com/Metalisaac321/eva-fullstack-challenge-backend
+[submodule "eva-fullstack-challenge-frontend"]
+	path = eva-fullstack-challenge-frontend
+	url = https://github.com/Metalisaac321/eva-fullstack-challenge-frontend
