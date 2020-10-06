@@ -19,6 +19,8 @@ services:
       context: ./eva-fullstack-challenge-backend
     ports:
       - "3000:3000"
+    volumes:
+      - ./eva-fullstack-challenge-backend/:/app
     restart: always
   frontend:
     image: eva-fullstack-challenge-frontend
@@ -27,6 +29,8 @@ services:
       context: ./eva-fullstack-challenge-frontend
     ports:
       - "4200:4200"
+    volumes:
+      - ./eva-fullstack-challenge-frontend/:/app
     restart: always
 volumes:
   eva-fullstack-challenge-volume:
