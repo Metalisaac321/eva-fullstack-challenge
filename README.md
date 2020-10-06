@@ -62,7 +62,8 @@ npm run test
 ```
 
 ## Notas adicionales
-Los archivos CSV (seed) estan guardados en eva-fullstack-challenge-backend y se inicalizan la primera vez que se corre el contenedor de docker si necesita ver cuando se terminaron de cargar los datos use el siguiente comando:
+Los archivos CSV (seed) estan guardados en eva-fullstack-challenge-backend/public y se inicalizan la primera vez que se corre el contenedor de docker.
+Si necesita ver cuando se terminaron de cargar los datos use el siguiente comando:
 ```bash
 # Este comando sirve para ver los logs del contenedor de docker donde se esta ejecutando el back.
 $ docker logs --follow eva-fullstack-challenge-backend-container
