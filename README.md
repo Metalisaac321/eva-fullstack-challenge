@@ -67,3 +67,12 @@ Los archivos CSV (seed) estan guardados en eva-fullstack-challenge-backend y se 
 # Este comando sirve para ver los logs del contenedor de docker donde se esta ejecutando el back.
 $ docker logs --follow eva-fullstack-challenge-backend-container
 ```
+
+## Usuario que tiene permiso para entrar a la plataforma
+Cuando entre a la plataforma se puede loguear con este usuario:
+```json
+{
+    username: 'admin',
+    password: 'admin',
+}
+```
