@@ -72,7 +72,7 @@ $ docker logs --follow eva-fullstack-challenge-backend-container
 Cuando entre a la plataforma se puede loguear con este usuario:
 ```json
 {
-    username: 'admin',
-    password: 'admin',
+    "username": "admin",
+    "password": "admin",
 }
 ```
