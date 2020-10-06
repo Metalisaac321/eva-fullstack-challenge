@@ -1,0 +1,37 @@
+version: "3.0"
+services:
+  db:
+    image: postgres
+    container_name: eva-fullstack-challenge-db-container
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: SuperSecretPassword
+      POSTGRES_DB: eva-fullstack-challenge
+    ports:
+      - "5432:5432"
+    volumes:
+      - eva-fullstack-challenge-volume:/data/db
+    restart: always
+  backend:
+    image: eva-fullstack-challenge-backend
+    container_name: eva-fullstack-challenge-backend-container
+    build:
+      context: ./eva-fullstack-challenge-backend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./eva-fullstack-challenge-backend/:/app
+    restart: always
+  frontend:
+    image: eva-fullstack-challenge-frontend
+    container_name: eva-fullstack-challenge-frontend-container
+    build:
+      context: ./eva-fullstack-challenge-frontend
+    ports:
+      - "4200:4200"
+    volumes:
+      - ./eva-fullstack-challenge-frontend/:/app
+    restart: always
+volumes:
+  eva-fullstack-challenge-volume:
+    driver: local
